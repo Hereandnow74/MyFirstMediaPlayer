@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    //
+    //create a mediaPlayer
     private MediaPlayer mediaPlayer;
 
 
@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //create a media player, that will be play a music file from raw folder
+        //make mediaPlayer to play a music file from raw folder
         mediaPlayer = MediaPlayer.create(this, R.raw.play);
         //create a button to start music file
         Button playButton =(Button) findViewById(R.id.button_play);
-        //set on click for pause button
+        //set onclick for play button
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         });
         //create a button to pause music file
         Button pauseButton =(Button) findViewById(R.id.button_pause);
-        //set on click for pause button
+        //set onclick for pause button
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
