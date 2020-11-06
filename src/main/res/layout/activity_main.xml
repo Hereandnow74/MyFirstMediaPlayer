@@ -30,4 +30,22 @@
         app:layout_constraintTop_toTopOf="@id/button_play"
         app:layout_constraintVertical_bias="0.14" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_play"
+        app:srcCompat="@android:drawable/ic_media_play"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_pause"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        tools:layout_editor_absoluteY="358dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
